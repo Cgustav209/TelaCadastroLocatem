@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="CorPrimaria">#FFCB04</Color>
+    <Color x:Key="CorSecundaria">#FFCE4F</Color>
+    <Color x:Key="CorTerciaria">#272627</Color>
+    <Color x:Key="CorQuartaria">#D9D9D9</Color>
+    <Color x:Key="CorBranco">#FFFFFF</Color>
+    <Color x:Key="CorPreto">#000000</Color>
+    <Color x:Key="CorQuitaria">#F2AF0D</Color>
+    <Color x:Key="CorErro">#FF0000</Color>
+
+    <Style TargetType="ContentPage" x:Key="ContentFundo">
+        <Setter Property="BackgroundColor" Value="{StaticResource CorBranco}"/>
+
+    </Style>
+
+    <Style TargetType="HorizontalStackLayout" x:Key="Espacamento">
+        <Setter Property="Spacing" Value="1"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="HeightRequest" Value="500"/>
+        <Setter Property="WidthRequest" Value="600"/>
+
+    </Style>
+
+    <Style TargetType="ImageButton" x:Key="botaoImagem">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="EstiloBotao">
+        <Setter Property="BackgroundColor" Value="{StaticResource CorPrimaria}"/>
+        <Setter Property="TextColor" Value="{StaticResource CorPreto}"/>
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HeightRequest" Value="50"/>
+        <Setter Property="Margin" Value="0,20,0,0"/>
+        <Setter Property="CornerRadius" Value="20"/>
+
+    </Style>
+
+    <Style TargetType="Border" x:Key="EstiloBorda">
+        <Setter Property="BackgroundColor" Value="{StaticResource CorBranco}"/>
+        <Setter Property="Padding" Value="20"/>
+    </Style>
+
+    <!--<Style TargetType="Border" x:Key="BordaEntry">
+
+        <Setter Property="Background" Value="{StaticResource CorPreto}"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="MinimumHeightRequest" Value="44"/>
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="StrokeThickness" Value="1"/>
+
+    </Style>-->
+
+    <Style TargetType="Entry" x:Key="EstiloEntry">
+
+        <Setter Property="BackgroundColor" Value="{StaticResource CorBranco}"/>
+        <Setter Property="TextColor" Value="{StaticResource CorTerciaria}"/>
+        <!--<Setter Property="PlaceholderColor" Value="{StaticResource CorTerciaria}"/>-->
+        <Setter Property="HeightRequest" Value="55"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+
+    </Style>
+
+    <Style TargetType="Label" x:Key="LabelTitulo">
+        <Setter Property="FontSize" Value="45"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{StaticResource CorPreto}"/>
+        <Setter Property="VerticalOptions" Value="Start"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+
+    </Style>
+
+    <Style TargetType="Label" x:Key="LabelNormal">
+        <Setter Property="VerticalOptions" Value="Start"/>
+        <Setter Property="FontAttributes" Value="None"/>
+        <Setter Property="FontSize" Value="16"/>
+
+    </Style>
+
+</ResourceDictionary>
