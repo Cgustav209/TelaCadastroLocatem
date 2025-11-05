@@ -27,6 +27,16 @@ public partial class LocadorPage : ContentPage
         // Quando IsPassword = true ? oculta o texto (mostra bolinhas)
         // Quando IsPassword = false ? mostra o texto real digitado
         SenhaEntry.IsPassword = !_showPassword;
+
+
+        if (_showPassword)
+        {
+            BotaoDeAlterarVisibilidade.Source = "olhoaberto.png"; // Ícone de olho aberto quando a senha está visível.
+        }
+        else
+        {
+            BotaoDeAlterarVisibilidade.Source = "olhofechado.png"; // Ícone de olho fechado quando a senha está escondida.
+        }
     }
 
     // Método executado quando o usuário clica no botão de login

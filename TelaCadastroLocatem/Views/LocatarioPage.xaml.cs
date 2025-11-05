@@ -34,6 +34,15 @@ public partial class LocatarioPage : ContentPage
         // Aqui, ele define a propriedade para o *oposto* do estado atual.
         // (Se _showPassword é true, IsPassword vira false -> mostra a senha).
         SenhaEntry.IsPassword = !_showPassword;
+
+        if (_showPassword)
+        { 
+            BotaoDeAlterarVisibilidade.Source = "olhoaberto.png"; // Ícone de olho aberto quando a senha está visível.
+        }
+        else
+        {
+            BotaoDeAlterarVisibilidade.Source = "olhofechado.png"; // Ícone de olho fechado quando a senha está escondida.
+        }
     }
 
     // Método (event handler) chamado quando o botão de "Login" (ou "Cadastrar") é clicado.

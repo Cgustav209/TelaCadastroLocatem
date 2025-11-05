@@ -19,11 +19,12 @@
                         <Grid>
                             <!-- botao para trocar para locador-->
                             <ImageButton  
-                            Source="botaolocatario.png" 
-                            BackgroundColor="Transparent"  
-                            WidthRequest="150"
-                            VerticalOptions="Start"
-                            HorizontalOptions="End"
+                                    Source="botaolocatario.png" 
+                                    BackgroundColor="Transparent"  
+                                    WidthRequest="150"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="End"
+                                    BorderWidth="0"
                             />
 
                             <Grid Padding="20">
@@ -50,11 +51,12 @@
                         <VerticalStackLayout Grid.Row="0">
                             <HorizontalStackLayout>
                                 <ImageButton 
-                              Source="seta.png" 
-                              Background="Transparent"
-                              Clicked="OnTogglePassword"
-                              WidthRequest="60"
-                              HorizontalOptions="Start"/>
+                                     Source="seta.png" 
+                                     Background="Transparent"
+                                     Clicked="OnTogglePassword"
+                                     WidthRequest="60"
+                                     HorizontalOptions="Start"
+                                     BorderWidth="0"/>
                                 <Label Text="Locatario" Style="{StaticResource LabelTitulo}"/>
 
                             </HorizontalStackLayout>
@@ -107,7 +109,14 @@
                                         <Grid>
                                             <Entry x:Name="SenhaEntry"  IsPassword="True" Style="{StaticResource EstiloEntry}"/>
 
-                                            <ImageButton Grid.Column="1" Source="eye.png" Background="Transparent" Clicked="OnTogglePassword" WidthRequest="30" HorizontalOptions="End"/>
+                                            <ImageButton x:Name="BotaoDeAlterarVisibilidade"
+                                                         Source="olhofechado.png" 
+                                                         Background="Transparent"
+                                                         Clicked="OnTogglePassword"
+                                                         WidthRequest="30"
+                                                         Margin="0,0,10,0"
+                                                         HorizontalOptions="End"
+                                                         BorderWidth="0"/>
 
                                         </Grid>
 
@@ -123,7 +132,11 @@
                         <!--Link dos termos-->
                         <HorizontalStackLayout Grid.Row="3" Spacing="6" HorizontalOptions="Center">
                             <Label Text="Ao entrar você concorda com os" Style="{StaticResource LabelNormal}"/>
-                            <Button Text="Termos de Uso"  TextColor="Blue" Clicked="OnShowTerms" Style="{StaticResource botaoImagem}"/>
+                            <Button Text="Termos de Uso" 
+                                    TextColor="Blue"
+                                    Clicked="OnShowTerms"
+                                    Style="{StaticResource botaoImagem}"
+                                    BorderWidth="0"/>
                         </HorizontalStackLayout>
 
                         <Grid Grid.Row="4">
@@ -132,13 +145,13 @@
 
                         </Grid>
 
-                        <HorizontalStackLayout Grid.Row="5" Spacing="6" VerticalOptions="End" HorizontalOptions="Center">
-                            <!-- Rodape -->
+                        <!--<HorizontalStackLayout Grid.Row="5" Spacing="6" VerticalOptions="End" HorizontalOptions="Center">
+                            --><!-- Rodape --><!--
                             <Label Text="@ 2025" />
 
                             <Label Text="Login.paginaSplit"/>
 
-                        </HorizontalStackLayout>
+                        </HorizontalStackLayout>-->
 
                     </Grid>
                 </Grid>
@@ -154,11 +167,12 @@
 
                 <!-- botao para trocar para locatario-->
                 <ImageButton Source="botaolocador.png" 
-              BackgroundColor="Transparent"
-              WidthRequest="150"
-              VerticalOptions="Start"
-              HorizontalOptions="Start"
-              Clicked="OnIrParaLocadorClicked"/>
+                  BackgroundColor="Transparent"
+                  WidthRequest="150"
+                  VerticalOptions="Start"
+                  HorizontalOptions="Start"
+                  BorderWidth="0"
+                  Clicked="OnIrParaLocadorClicked"/>
 
 
 
